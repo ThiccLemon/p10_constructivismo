@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>d</title>
+    <style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+    .cuadrao{
+        width: 400px;
+        height: 2000px;
+        background-color: rgb(199, 78, 255);
+        position: absolute;
+        margin: 0;
+        padding: 0;
+    }
+     main{
+         background-color: blanchedalmond;
+         width: 100%;
+         height: 2000vh;
+     }
+
+     .ng{
+         position: absolute;
+         left: 0;
+         top: 3%;
+         width: 400px;
+         height: 30px;
+         background-color: black;
+
+     }
+
+     .ng2{
+         position: absolute;
+         left: 0;
+         top: 5%;
+         width: 400px;
+         height: 30px;
+         background-color: black;
+
+     }
+
+     .ng3{
+         position: absolute;
+         left: 0;
+         top: 498px;
+         width: 100%;
+         height: 50px;
+         background-color: black;
+
+     }
+     .ng4{
+         position: absolute;
+         left: 0;
+         top: 420px;
+         width: 100%;
+         height: 50px;
+         background-color: black;
+
+     }
+     #cr{
+        position: absolute;
+         left: 950px;
+         top: 30px;
+         width: 200px;
+         height: 200px;
+         border-radius: 100%;
+         background-color: black;
+         
+     }
+     .txt{
+         display: flex;
+         justify-content: flex-end;
+         font-family: 'Russo One', sans-serif;
+         font-size: 30px;
+         position: absolute;
+         top: 58px;
+         right: 0;
+         font-size: 260px;
+         margin-right: -18px;
+     }
+
+     a{
+        text-decoration: none;
+        color: black;
+     }
+
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#cr").mouseenter(function(){
+                $(".cuadrao").css("background-color","green")
+                $("main").css("background-color","pink")
+                $(".ng").css("background-color","white")
+                $(".ng2").css("background-color","white")
+                $(".ng3").css("background-color","white")
+                $(".ng4").css("background-color","white")
+                $("#cr").css("background-color","white")
+                $(".txt").css("color","white")
+                $("a").css("color","white")
+
+                 
+            });
+            $("#cr").mouseleave(function(){
+                $(".cuadrao").css("background-color","rgb(199, 78, 255)")
+                $("main").css("background-color","blanchedalmond")
+                $(".ng").css("background-color","black")
+                $(".ng2").css("background-color","black")
+                $(".ng3").css("background-color","black")
+                $(".ng4").css("background-color","black")
+                $("#cr").css("background-color","black")
+                $(".txt").css("color","black")
+                $("a").css("color","black")
+                 
+            });
+
+        });
+        </script>
+</head>
+<body> 
+    <main>
+       <div id="cr"></div>
+        <div class="ng3"></div>
+        <div class="ng4"></div>
+   
+    <div class="cuadrao">
+
+       <div class="ng"></div> 
+       <div class="ng2"></div>
+
+        <div class="txt">
+            <a href="img/vasyl2.jpg"><h1>d</h1></a>
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
